@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Panic, Coach! - The Complete Blueprint for Coaching Youth Baseball</title>
+    <meta name="description" content="Everything you need to coach youth baseball with confidence. Get proven strategies, drills, and game management tips.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #2d1810 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .book-cover {
+            text-align: center;
+        }
+
+        .book-cover img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .book-mockup {
+            background: linear-gradient(180deg, #d4a853 0%, #c4873a 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .book-mockup h1 {
+            font-size: 2.5rem;
+            color: #0a1628;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .book-mockup .subtitle {
+            font-size: 1rem;
+            color: #0a1628;
+            font-weight: 500;
+        }
+
+        .book-mockup .author {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #0a1628;
+            font-weight: 600;
+        }
+
+        .book-info h2 {
+            font-size: 2rem;
+            color: #d4a853;
+            margin-bottom: 1.5rem;
+        }
+
+        .book-info p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+        .features li::before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: #d4a853;
+        }
+
+        .signup-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            border-radius: 12px;
+            padding: 3rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .signup-section h3 {
+            font-size: 1.8rem;
+            color: #d4a853;
+            margin-bottom: 1rem;
+        }
+
+        .signup-section p {
+            color: #ccc;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .signup-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .signup-form input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem 1.5rem;
+            border: 2px solid rgba(212, 168, 83, 0.5);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .signup-form input[type="email"]::placeholder {
+            color: #888;
+        }
+
+        .signup-form input[type="email"]:focus {
+            outline: none;
+            border-color: #d4a853;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .signup-form button {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #d4a853 0%, #c4873a 100%);
+            border: none;
+            border-radius: 8px;
+            color: #0a1628;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .signup-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .benefit-card h4 {
+            color: #d4a853;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .benefit-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .about-author {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .about-author h3 {
+            color: #d4a853;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .about-author p {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .success-message {
+            display: none;
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            color: #4caf50;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p style="color: #d4a853; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">Coming Soon</p>
+        </header>
+
+        <section class="hero">
+            <div class="book-cover">
+                <div class="book-mockup">
+                    <h1>DON'T PANIC, COACH!</h1>
+                    <p class="subtitle">The Complete Blueprint for Coaching Youth Baseball</p>
+                    <p class="author">THE COACH CREATOR</p>
+                </div>
+            </div>
+
+            <div class="book-info">
+                <h2>Everything You Need to Coach Youth Baseball with Confidence</h2>
+                <p>From practice planning to motivating players, coaching youth baseball can be intimidating—but Don't Panic. Coach has you covered. This comprehensive guide will help you manage your team and teach the game with ease.</p>
+
+                <ul class="features">
+                    <li>Use proven strategies to run effective practices</li>
+                    <li>Teach fundamental skills in a simple and clear manner</li>
+                    <li>Ingrain good habits through thoughtful drills</li>
+                    <li>Master game management and decision making</li>
+                    <li>Communicate with young players, parents, and other coaches</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="signup-section">
+            <h3>Get Coaching Secrets & Updates</h3>
+            <p>Be the first to know when the book launches. Plus, get exclusive coaching tips delivered to your inbox.</p>
+
+            <form class="signup-form" id="emailForm">
+                <input type="email" placeholder="Enter your email address" required id="emailInput">
+                <button type="submit">Sign Me Up</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                Thanks for signing up! We'll keep you updated on the book launch and send you coaching tips.
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefit-card">
+                <h4>Proven Strategies</h4>
+                <p>Battle-tested methods that work for coaches at every experience level.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>Clear Instructions</h4>
+                <p>Step-by-step guidance that's easy to understand and implement.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>Ready-to-Use Drills</h4>
+                <p>Practical drills you can start using at your next practice.</p>
+            </div>
+        </section>
+
+        <section class="about-author">
+            <h3>About The Coach Creator</h3>
+            <p>The Coach Creator is dedicated to aiding volunteer coaches in youth sports. By offering clear and consistent advice, he has helped numerous leaders navigate the challenges of coaching and inspire their teams to love the game.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 The Coach Creator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('emailInput').value;
+            const successMessage = document.getElementById('successMessage');
+
+            // Here you would typically send the email to your backend or email service
+            // For now, we'll just show the success message
+            console.log('Email submitted:', email);
+
+            // Show success message
+            successMessage.classList.add('show');
+
+            // Clear the input
+            document.getElementById('emailInput').value = '';
+
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                successMessage.classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
