@@ -1,0 +1,48 @@
+
+PRINTING YOUR HANDBOOK AS A BOOKLET
+====================================
+
+Your handbook is sized at 5.5" × 8.5" (digest size) - perfect for a pocket-sized booklet.
+
+OPTION 1: Print at Home (Booklet Style)
+----------------------------------------
+1. Open liver-handbook.pdf
+2. Print settings:
+   - Select "Booklet" or "Multiple pages per sheet: 2"
+   - Paper size: Letter (8.5" × 11")
+   - Duplex: Short edge (flip on short side)
+   - This will print 2 pages per sheet
+3. Fold printed sheets in half
+4. Staple along the spine
+5. Trim edges if desired
+
+OPTION 2: Print at Copy Shop
+-----------------------------
+1. Take liver-handbook.pdf to FedEx, Staples, or local print shop
+2. Ask for: "Saddle-stitch booklet, digest size (5.5 × 8.5)"
+3. Recommended: 20-50 copies for $20-40
+4. Options: Full color or black & white
+
+OPTION 3: Print on Demand (Amazon KDP)
+---------------------------------------
+1. Upload to KDP as paperback
+2. Select trim size: 5.5" × 8.5"
+3. Print-on-demand - only pay when someone orders
+4. Can sell on Amazon or order author copies
+
+OPTION 4: Simple Single-Sided
+------------------------------
+1. Print normally on Letter paper (8.5" × 11")
+2. Pages will have wide margins
+3. Hole-punch and put in binder
+4. Easiest option for quick reference
+
+RECOMMENDED: Option 2 (copy shop) for best results
+Cost: About $1-2 per booklet for 20+ copies
+
+===================================
+FILE: liver-handbook.pdf
+SIZE: 5.5" × 8.5" (digest)
+PAGES: ~20-25
+READY TO PRINT: ✓
+===================================
