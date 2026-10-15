@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don't Panic, Coach! - The Complete Blueprint for Coaching Youth Baseball</title>
     <meta name="description" content="Everything you need to coach youth baseball with confidence. Get proven strategies, drills, and game management tips.">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="Don't Panic, Coach! - The Complete Blueprint for Coaching Youth Baseball">
+    <meta property="og:description" content="Proven strategies, simple drills, and game management tips for volunteer youth baseball coaches.">
     <style>
         * {
             margin: 0;
@@ -159,7 +163,31 @@
         }
 
         .signup-form input[type="email"]::placeholder {
-            color: #888;
+            color: #a0a0a0;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+        }
+
+        .signup-form button:focus-visible {
+            outline: 3px solid #fff;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .signup-form button {
+                transition: none;
+            }
+
+            .signup-form button:hover {
+                transform: none;
+            }
         }
 
         .signup-form input[type="email"]:focus {
@@ -206,7 +234,7 @@
         }
 
         .benefit-card p {
-            color: #aaa;
+            color: #bbb;
             font-size: 0.95rem;
             line-height: 1.5;
         }
@@ -232,7 +260,7 @@
         footer {
             text-align: center;
             padding: 3rem 0;
-            color: #666;
+            color: #a0a0a0;
             font-size: 0.9rem;
         }
 
@@ -257,6 +285,7 @@
             <p style="color: #d4a853; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">Coming Soon</p>
         </header>
 
+        <main>
         <section class="hero">
             <div class="book-cover">
                 <div class="book-mockup">
@@ -268,7 +297,7 @@
 
             <div class="book-info">
                 <h2>Everything You Need to Coach Youth Baseball with Confidence</h2>
-                <p>From practice planning to motivating players, coaching youth baseball can be intimidating—but Don't Panic. Coach has you covered. This comprehensive guide will help you manage your team and teach the game with ease.</p>
+                <p>From practice planning to motivating players, coaching youth baseball can be intimidating—but Don't Panic, Coach! has you covered. This comprehensive guide will help you manage your team and teach the game with ease.</p>
 
                 <ul class="features">
                     <li>Use proven strategies to run effective practices</li>
@@ -285,11 +314,12 @@
             <p>Be the first to know when the book launches. Plus, get exclusive coaching tips delivered to your inbox.</p>
 
             <form class="signup-form" id="emailForm">
-                <input type="email" placeholder="Enter your email address" required id="emailInput">
+                <label for="emailInput" class="visually-hidden">Email address</label>
+                <input type="email" name="email" autocomplete="email" placeholder="Enter your email address" required id="emailInput">
                 <button type="submit">Sign Me Up</button>
             </form>
 
-            <div class="success-message" id="successMessage">
+            <div class="success-message" id="successMessage" role="status" aria-live="polite">
                 Thanks for signing up! We'll keep you updated on the book launch and send you coaching tips.
             </div>
         </section>
@@ -313,9 +343,10 @@
             <h3>About The Coach Creator</h3>
             <p>The Coach Creator is dedicated to aiding volunteer coaches in youth sports. By offering clear and consistent advice, he has helped numerous leaders navigate the challenges of coaching and inspire their teams to love the game.</p>
         </section>
+        </main>
 
         <footer>
-            <p>&copy; 2024 The Coach Creator. All rights reserved.</p>
+            <p>&copy; 2026 The Coach Creator. All rights reserved.</p>
         </footer>
     </div>
 
@@ -323,12 +354,10 @@
         document.getElementById('emailForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const email = document.getElementById('emailInput').value;
             const successMessage = document.getElementById('successMessage');
 
-            // Here you would typically send the email to your backend or email service
-            // For now, we'll just show the success message
-            console.log('Email submitted:', email);
+            // TODO (launch blocker): emails are NOT saved anywhere yet. Connect an email
+            // service (e.g. Mailchimp, ConvertKit) before this page goes live.
 
             // Show success message
             successMessage.classList.add('show');
